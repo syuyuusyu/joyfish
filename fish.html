@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta http-equiv='ContentType' content="text/html;charset='utf-8'"/>      
+		<title>Fish</title>
+		<script type='text/javascript' src=Syu.js></script>
+        <script type='text/javascript' src=Data.js></script>
+        <script type='text/javascript' src=fish.js></script>
+        <script type='text/javascript' src=gameClient.js></script>
+        <style type="text/css">
+            body{padding:0; margin:0;font-size:12px;background-color:#000;}
+            #container{
+              position:relative;
+              width:1024px;
+              height:768px;
+              margin:0 auto;
+              background-color:white;
+              top:0px;  
+            }
+            canvas{
+                position:absolute;
+            }
+            @media screen and (max-height: 768px) {
+                #container{
+                   height:566px; 
+                }
+            }
+        </style>
+	</head>
+    <body>
+		<div id="container"  >
+            <canvas id='layer0' style="z-index:0"></canvas>
+            <canvas id='layer1' style="z-index:1"></canvas>
+            <canvas id='layer2' style="z-index:2"></canvas>
+            <canvas id='layer3' style="z-index:3"></canvas>
+            <canvas id='layer4' style="z-index:4"></canvas>
+        </div>
+	</body>
+</html>
